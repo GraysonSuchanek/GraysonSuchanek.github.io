@@ -30,7 +30,7 @@ function App() {
   // }
 
   async function redLight() {
-    const response = await fetch('http://192.168.1.100/api/jkLQKaDDNAFPNWfW1PsFfUbrX3RAcMdxv18ftrHe/lights/2/state', {
+    const response = await fetch('https://192.168.1.100/api/jkLQKaDDNAFPNWfW1PsFfUbrX3RAcMdxv18ftrHe/lights/2/state', {
       method: "PUT",
       body: JSON.stringify(
         {on: true, sat: 254, bri: 150, hue: 1400, alert: "select"}
